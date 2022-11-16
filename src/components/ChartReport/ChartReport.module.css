@@ -1,7 +1,6 @@
 @media screen and (min-width: 320px) {
   .chartContainer {
     max-width: 280px;
-    /* width: 100%; */
     padding: 0;
     margin: 0 auto;
     display: flex;
