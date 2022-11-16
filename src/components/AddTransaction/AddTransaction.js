@@ -1,16 +1,16 @@
 import { useState, useContext, useRef, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useCreateTransactionMutation } from '../../redux/transactions/transactionsApi';
 import { ReactComponent as CalcIcon } from '../../images/svg/calculator.svg';
-import contextProps from '../../context/context';
+import Notiflix from 'notiflix';
+import Dropdown from '../Dropdown';
 import DateForm from '../DateForm';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { gsap, Power3 } from 'gsap';
 import s from './AddTransaction.module.css';
-import Dropdown from '../Dropdown';
 import CalculatorInput from '../CalculatorInput';
+import contextProps from '../../context/context';
 import { authOperations, authSelectors } from '../../redux/auth';
-import { useDispatch, useSelector } from 'react-redux';
-import Notiflix from 'notiflix';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 export default function AddTransaction({ onCloseForm }) {
   const dispatch = useDispatch();
