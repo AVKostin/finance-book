@@ -1,73 +1,11 @@
-<<<<<<< HEAD
-import { useState, useContext } from 'react';
-import contextProps from '../../context/context';
-import optionsIncome from '../../data/categoriesIncome.json';
-import optionsExpense from '../../data/categoriesExpense.json';
-import st from '../EditTransaction/EditTransaction.module.css';
-import s from './Dropdown.module.css';
-
-=======
 import { useState, useContext } from "react";
-import s from "./Dropdown.module.css";
-import st from "../EditTransaction/EditTransaction.module.css";
 import contextProps from "../../context/context";
 import optionsIncome from "../../data/categoriesIncome.json";
 import optionsExpense from "../../data/categoriesExpense.json";
+import st from "../EditTransaction/EditTransaction.module.css";
+import s from "./Dropdown.module.css";
 
->>>>>>> df47d3b3cb2b038131d68ddcca0554a02d08f263
 function Dropdown({ category, setCategory }) {
-<<<<<<< HEAD
-  const [isActive, setIsActive] = useState(false);
-  const { type } = useContext(contextProps);
-  // const options = type === 'expense' ? categories.expense : categories.income;
-  const options =
-    type === 'expense'
-      ? optionsExpense.optionsExpense
-      : optionsIncome.optionsIncome;
-  return (
-    <div className={s.dropdown}>
-      <div
-        tabIndex="0"
-        className={`${s.dropdownBtn} ${st.dropdown}`}
-        onClick={() => setIsActive(!isActive)}
-      >
-        {!category && type === 'expense'
-          ? 'Product category'
-          : !category && type === 'income'
-          ? 'Income category'
-          : category}
-
-        {!isActive ? (
-          <svg
-            className={s.crownSvg}
-            width="12"
-            height="7"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="m1 1 5 4 5-4" stroke="#C7CCDC" strokeWidth="2" />
-          </svg>
-        ) : (
-          <svg
-            className={s.crownSvg}
-            width="12"
-            height="7"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m1 6 5-4 5 4"
-              stroke="#C7CCDC"
-              strokeWidth="2"
-              className="crownUp"
-            />
-          </svg>
-        )}
-      </div>
-      {isActive && (
-        <div className={s.dropdownContent}>
-          {options.map((option, idx) => (
-=======
     const [isActive, setIsActive] = useState(false);
 
     const { type } = useContext(contextProps);
@@ -78,7 +16,6 @@ function Dropdown({ category, setCategory }) {
             : optionsIncome.optionsIncome;
     return (
         <div className={s.dropdown}>
->>>>>>> df47d3b3cb2b038131d68ddcca0554a02d08f263
             <div
                 tabIndex="0"
                 className={`${s.dropdownBtn} ${st.dropdown}`}
