@@ -2,7 +2,6 @@
   .editModalWrapper {
     width: 100vw;
     height: 100vh;
-    /* background-color: transparent; */
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0%;
@@ -12,11 +11,13 @@
     align-items: center;
     z-index: 999;
   }
+
   .inputsWrapper {
     text-align: center;
     width: 200px;
     padding: 15px;
   }
+
   .editForm {
     width: 270px;
     display: flex;
@@ -27,12 +28,14 @@
     padding: 40px;
     border-radius: 10%;
   }
+
   .dateWrapper {
     display: flex;
     text-align: center;
     position: relative;
     cursor: pointer;
   }
+
   .pickerWrapper {
     margin: 9px -105px;
   }
@@ -43,9 +46,9 @@
     text-align: center;
     width: 170px;
   }
+
   .editInput {
     outline: none;
-
     height: 45px;
     border: none;
     border: 2px solid #f5f6fb;
@@ -58,19 +61,19 @@
     line-height: 14px;
     letter-spacing: 0.02em;
   }
-  /* .dropdown {
-  width: 162%;
-} */
+
   .editLabels {
     margin: 20px 0;
     border-radius: 0;
     display: block;
   }
+
   .calcIcon {
     cursor: pointer;
     position: absolute;
     margin: -36px 156px;
   }
+
   .calc {
     margin: 10px 25px;
     position: absolute;
@@ -82,12 +85,13 @@
     border: 2px solid #f5f6fb;
     background: white;
   }
+
   .inputSum {
     position: relative;
   }
+
   .buttonOk {
     margin-left: 5px;
-
     cursor: pointer;
     color: #fff;
     background-color: #ff751d;
@@ -131,20 +135,22 @@
     justify-content: space-between;
     margin-top: 10px;
   }
+
   .closeIcon {
     margin-left: auto;
     color: #52555f;
   }
+
   .closeIcon:hover {
     margin-left: auto;
     color: #ff751d;
   }
 }
+
 @media screen and (min-width: 768px) {
   .editModalWrapper {
     width: 100vw;
     height: 100vh;
-    /* background-color: transparent; */
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0%;
@@ -154,10 +160,12 @@
     align-items: center;
     z-index: 999;
   }
+
   .inputsWrapper {
     text-align: center;
     width: 225px;
   }
+
   .editForm {
     width: 300px;
     display: flex;
@@ -168,12 +176,14 @@
     padding: 40px;
     border-radius: 10%;
   }
+
   .dateWrapper {
     display: flex;
     text-align: center;
     padding-left: 25%;
     position: relative;
   }
+
   .pickerWrapper {
     width: 265px;
     margin: 6px -97px;
@@ -184,9 +194,9 @@
     width: fit-content;
     text-align: center;
   }
+
   .editInput {
     outline: none;
-
     height: 45px;
     border: none;
     border: 2px solid #f5f6fb;
@@ -199,22 +209,21 @@
     line-height: 14px;
     letter-spacing: 0.02em;
   }
-  /* .dropdown {
-  width: 162%;
-} */
+
   .editLabels {
     margin: 20px 0;
     border-radius: 0;
     display: block;
   }
+
   .calcIcon {
     position: absolute;
     margin: -36px 131px;
   }
+
   .calc {
     margin: 10px 25px;
     position: absolute;
-    /* margin: 0px -65px; */
     width: 170px;
     padding: 10px;
     text-align: center;
@@ -222,9 +231,11 @@
     border: 2px solid #f5f6fb;
     background: white;
   }
+
   .inputSum {
     position: relative;
   }
+
   .buttonOk {
     color: #fff;
     background-color: #ff751d;
@@ -266,15 +277,18 @@
     justify-content: space-between;
     margin-top: 10px;
   }
+
   .closeIcon {
     margin-left: auto;
     color: #52555f;
   }
+
   .closeIcon:hover {
     margin-left: auto;
     color: #ff751d;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .pickerWrapper {
     margin: 37px -41px;
