@@ -1,17 +1,3 @@
-/* @media screen and (min-width: 320px) {
-  .kapusta {
-    width: 183px;
-    height: 46px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .kapusta {
-    width: 306px;
-    height: 77px;
-  }
-} */
-
 .cabbageIconTop {
   position: absolute;
   left: 270px;
@@ -44,6 +30,7 @@
     left: 230px;
     top: 658px;
   }
+
   .cabbageGroup {
     left: 10px;
     top: 84px;
