@@ -1,3 +1,8 @@
+Рабочая часть командного проекта! 
+Фронтенд деплоится на Netlify
+Бэкенд на Heroku
+
+
 **Read in other languages: [Русский](README.md), [Polska](README.pl.md).**
 
 # React homework template
