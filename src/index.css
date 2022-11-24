@@ -73,20 +73,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
-body {
-  font-family: 'Roboto';
-  letter-spacing: 0.02em;
-  overflow-x: hidden;
-
-  background-color: #f2f5fc;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-} */
-
 a {
   text-decoration: none;
 }
@@ -123,17 +109,6 @@ img {
   border-radius: 2px;
   background-color: #ff751d;
 }
-
-/* @media screen and (min-width: 720px) {
-  html {
-    box-sizing: border-box;
-    width: 100vw;
-    overflow: hidden;
-  }
-  body {
-    background-color: rgb(245, 235, 204);
-  }
-} */
 
 li {
   list-style: none;
