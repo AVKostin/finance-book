@@ -12,14 +12,10 @@ import Modal from '../../components/Modal/Modal';
 
 export default function TransactionsList() {
   const dispatch = useDispatch();
-
   const balance = useSelector(authSelectors.getUserBalance);
-
   const { type, date, setNewDate } = useContext(contextProps);
-
   const [deleteTransaction] = useDeleteTransactionMutation();
   const { data } = useFetchByDateQuery(date);
-
   const [showModal, setShowModal] = useState(false);
   const [modalEdit, setModalEdit] = useState(false);
   const [transactionId, setTransactionId] = useState('');
