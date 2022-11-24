@@ -1,11 +1,3 @@
-/* .firstWrapper {
-  display: block;
-  min-width: 283px;
-  height: 42px;
-
-  border-bottom: 1px solid #f5f6fb;
-
-} */
 .listItem:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -34,20 +26,16 @@
 
 .listItem__subCategory {
   display: inline-block;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
-
   align-items: center;
   letter-spacing: 0.04em;
-
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
   color: #52555f;
 }
 
@@ -62,7 +50,6 @@
   line-height: 9px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #52555f;
 }
 
@@ -73,7 +60,6 @@
   font-size: 8px;
   line-height: 9px;
   letter-spacing: 0.04em;
-
   color: #52555f;
 }
 
@@ -88,7 +74,6 @@
   display: inline-flex;
   min-width: 84px;
   justify-content: flex-end;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
