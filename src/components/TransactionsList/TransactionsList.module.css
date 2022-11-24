@@ -3,7 +3,6 @@
   table-layout: fixed;
   border: none;
   overflow-x: hidden;
-  /* overflow-y: scroll; */
 }
 
 .bodyTableScroll {
@@ -31,7 +30,6 @@
 
 .mainTbody {
   border-radius: 0;
-  /* overflow: auto; */
 }
 
 .theadTable {
@@ -87,21 +85,25 @@
 .thSum {
   width: 130px;
 }
+
 .tdSum {
   font-weight: bold;
   width: 130px;
   color: #407946;
 }
+
 .tdSumExpense {
   font-weight: bold;
   color: #e7192e;
 }
+
 .tdDesc {
   max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .thIcon {
   width: 40px;
 }
