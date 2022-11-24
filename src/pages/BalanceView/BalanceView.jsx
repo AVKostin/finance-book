@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import AddTransaction from '../../components/AddTransaction/AddTransaction';
-// import BalanceContainer from '../../components/Container/BalanceContainer';
-import TransactionsList from '../../components/TransactionsList/TransactionsList';
-import TransactionsListMobile from '../../components/TransactionsList/TransactionListMobile';
-import Summary from '../../components/Summary';
-import Balance from '../../components/Balance';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 import ToGoReport from '../../components/ToGoReport';
 import DateForm from '../../components/DateForm';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
 import contextProps from '../../context/context';
+import Summary from '../../components/Summary';
+import Balance from '../../components/Balance';
+import TransactionsListMobile from '../../components/TransactionsList/TransactionListMobile';
+import TransactionsList from '../../components/TransactionsList/TransactionsList';
 import s from './BalanceView.module.css';
+// import BalanceContainer from '../../components/Container/BalanceContainer';
 
 const BalanceView = () => {
   const [type, setType] = useState('income');
@@ -35,7 +35,6 @@ const BalanceView = () => {
     const newDate = `${dateNew.split('.')[0]}.${dateNew.split('.')[1]}.${
       dateNew.split('.')[2]
     }`;
-
     setDate(newDate);
     setYear(newDate.split('.')[2]);
     setPicker(false);
@@ -62,7 +61,6 @@ const BalanceView = () => {
   };
 
   const viewPort = useWindowDimensions();
-
   const day = new Date();
 
   function startDate() {
@@ -73,7 +71,6 @@ const BalanceView = () => {
         ? `${'0' + (day.getMonth() + 1)}`
         : day.getMonth();
     const y = day.getFullYear();
-
     return `${d}.${m}.${y}`;
   }
 
@@ -142,7 +139,6 @@ const BalanceView = () => {
                   <div className={s.balanceContainer}>
                     <Balance />
                   </div>
-
                   <DateForm
                     date={date}
                     handleCalendarClick={handleCalendarClick}
@@ -153,7 +149,6 @@ const BalanceView = () => {
                 {date !== '' ? (
                   <TransactionsListMobile transactionType={type} date={date} />
                 ) : null}
-
                 <div className={s.buttonContainerMobile}>
                   <button
                     className={`${s.buttonExpense} ${
