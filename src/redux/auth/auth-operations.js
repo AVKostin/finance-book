@@ -106,7 +106,6 @@ const updateBalance = createAsyncThunk(
             Notiflix.Notify.success("Balance updated", {
                 timeout: 2000,
             });
-
             return data;
         } catch (error) {
             console.log(error);
