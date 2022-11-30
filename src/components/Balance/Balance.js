@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Notiflix from "notiflix";
-import s from "./Balance.module.css";
 import { authOperations, authSelectors } from "../../redux/auth";
 import Notification from "../../components/Notification/Notification";
+import s from "./Balance.module.css";
+import Notiflix from "notiflix";
 
 const Balance = ({ hide, width }) => {
     const dispatch = useDispatch();
@@ -25,7 +25,6 @@ const Balance = ({ hide, width }) => {
             });
             return;
         }
-
         dispatch(authOperations.updateBalance({ balance: +sum }));
     };
     return (
