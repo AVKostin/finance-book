@@ -14,18 +14,14 @@ import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 export default function AddTransaction({ onCloseForm }) {
   const dispatch = useDispatch();
+  const [sum, setSum] = useState('');
+  const [calc, setCalc] = useState(false);
+  const [category, setCategory] = useState('');
+  const [description, setDescription] = useState('');
   const balance = useSelector(authSelectors.getUserBalance);
   const { type, picker, handleCalendarClick, closePicker, date } =
     useContext(contextProps);
-
-  const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('');
-
-  const [calc, setCalc] = useState(false);
-  const [sum, setSum] = useState('');
-
   const [createTransaction] = useCreateTransactionMutation();
-
   const viewPort = useWindowDimensions();
 
   const handleSubmit = async e => {
@@ -61,7 +57,6 @@ export default function AddTransaction({ onCloseForm }) {
     //     : balance - transaction.sum;
 
     dispatch(authOperations.updateBalance({ balance: data.balance }));
-
     cleanState();
   };
 
@@ -76,7 +71,6 @@ export default function AddTransaction({ onCloseForm }) {
 
   const closeCalc = result => {
     setSum(result);
-
     setCalc(false);
   };
 
