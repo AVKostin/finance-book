@@ -78,7 +78,6 @@ const fetchCurrentUser = createAsyncThunk(
         if (persistedToken === null) {
             return thunkAPI.rejectWithValue();
         }
-
         token.set(persistedToken);
         try {
             const { data } = await axios.get("/auth/current");
@@ -95,11 +94,9 @@ const updateBalance = createAsyncThunk(
     async (credentials, thunkAPI) => {
         const state = thunkAPI.getState();
         const persistedToken = state.auth.token;
-
         if (persistedToken === null) {
             return thunkAPI.rejectWithValue();
         }
-
         token.set(persistedToken);
         try {
             const { data } = await axios.put("/users/balance", credentials);
