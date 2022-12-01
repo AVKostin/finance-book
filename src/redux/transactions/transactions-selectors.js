@@ -14,15 +14,15 @@ const getFullReport = (state) => state.wallet.wallet.fullReport;
 // const getTransactionError = state => state.wallet.error;
 
 const transactionsSelectors = {
-    getTotalBalance,
-    getMonthlyBalances,
-    getTransactionsPerDay,
-    getTransactionsPerMonth,
-    getIncomePerMonth,
-    getExpencesPerMonth,
-    getExpencesReportPerMonth,
-    getIncomeReportPerMonth,
     getFullReport,
+    getTotalBalance,
+    getIncomePerMonth,
+    getMonthlyBalances,
+    getExpencesPerMonth,
+    getTransactionsPerDay,
+    getIncomeReportPerMonth,
+    getTransactionsPerMonth,
+    getExpencesReportPerMonth,
     // getLoader,
     // getTransactionError,
 };
