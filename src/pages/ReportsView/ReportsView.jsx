@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import ChartReport from "../../components/ChartReport/ChartReport";
 import Container from "../../components/Container";
 import { Report } from "../../components/Report";
+import ChartReport from "../../components/ChartReport/ChartReport";
 import transactionsSelectors from "../../redux/transactions/transactions-selectors";
 import transactionsOperations from "../../redux/transactions/transactions-operations";
 import s from "./ReportView.module.css";
@@ -63,7 +63,6 @@ const ReportsView = () => {
             setMonth((prev) => (prev -= 1));
         }
     };
-
     return (
         <Container>
             <div className={s.containerReport}>
